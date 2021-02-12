@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
     <body>
 <header>
 <h1>Project Explorer</h1>
 <h2>One Stop Database for Academic Projects</h2>
 </header>
 <nav>
-<a href="index.html"> Home</a>
-<a href="search.html"> Projects</a>
-<a href="login.html"> Login</a>
-<a href="register.html"> Register</a>
-<a href="createproject.html"> Submit</a>
+<a href="/index.html">Home</a>
+<a href="/search.html">Projects</a>
+<a href="/login.html">Login</a>
+<a href="/register.html">Register</a>
+<a href="/createproject.html">Submit</a>
 </nav>
 <main>
   <section>
-      <h1>John Doe</h1>
-      <h3>john.doe@gmail.com</h3>
+      <h2>John Doe</h2>
+      <p>john.doe@gmail.com</p>
       <ul>
           <li>Program:Computer Science</li>
           <li>Matric:00/0000</li>
@@ -26,7 +23,8 @@
       </ul>
   </section> 
   <section>
-      <h2>Update Profile</h2>
+      <h1>Update Profile</h1>
+     <form name=" UpdateProfile">
       <div><label for="firstname">First Name:</label>
             <input id="firstname" type="text" name="firstName"  /></div><br>
                 <div>
@@ -35,7 +33,7 @@
             
                         <div>
                             <label for="email">Email Address:</label>
-                            <input id="email" type="email" name="Emai"  /></div><br>
+                            <input id="email" type="email" name="emai"  /></div><br>
                         
                                 <div>
                                     <label for="password">Password:</label>
@@ -70,16 +68,19 @@
                                             </div><br>
                                            
                                                 <input type="submit" />
+                                            </form>
   </section>
   <section>
       <h1>Change Password</h1>
+      <form name="ChangePassword">
       <div><label for="password"> Current Password:</label>
-      <input id="password" type="password" name=" current password"  /> </div><br> 
+      <input id="password" type="password" name=" currentPassword"  /> </div><br> 
       <div><label for="password"> New Password:</label>
-      <input id="password" type="password" name=" newpassword"  /></div><br> 
+      <input id="password" type="password" name=" newPassword"  /></div><br> 
       <div><label for="password"> Confirm Password:</label>
-      <input id="password" type="password" name="confirmpassword"  /> </div> <br>
+      <input id="password" type="password" name="confirmPassword"  /> </div> <br>
       <input type="submit" /> 
+    </form>
 
   </section>
 

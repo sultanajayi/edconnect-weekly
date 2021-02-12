@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
+    
     <body>
 <header>
 <h1>Project Explorer</h1>
 <h2>One Stop Database for Academic Projects</h2>
 </header>
 <nav>
-<a href="index.html"> Home</a>
-<a href="search.html"> Projects</a>
-<a href="login.html"> Login</a>
-<a href="register.html"> Register</a>
-<a href="createproject.html"> Submit</a>
+<a href="index.html">Home</a>
+<a href="search.html">Projects</a>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+<a href="createproject.html">Submit</a>
 </nav>
 <main>
-    <div><h1>Project 1</h1>
+    <div>
+        <h1>Project 1</h1>
     <ul>
         <li>Created by:John Doe</li>
         <li>Date Created:00/00/2000</li>
@@ -24,7 +23,7 @@
     </ul>
 </div>
 <h1>Edit Project</h1>
-    <form>
+    <form name="editProject">
         <div>
         <label for="name">Project Name:</label><br>
         <input id="name" name="name" type="text" />
@@ -44,7 +43,7 @@
         <br>
         <div>
             <label for="projectfile">Upload File</label><br>
-        <input id="projectfile" name="projectfile" type="file" />
+        <input id="projectfile" name="projectFile" type="file" />
         </div><br>
         <input type="submit" />
     </form>
