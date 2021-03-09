@@ -1,43 +1,141 @@
 <!DOCTYPE html>
 <html>
-    
+    <head><link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    </head>
     <body>
 <header>
-<h1>Project Explorer</h1>
-<h2>One Stop Database for Academic Projects</h2>
+<!-- <h1>Project Explorer</h1>
+<h2>One Stop Database for Academic Projects</h2> -->
+<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+    <a class="navbar-brand" href="#">Project Explorer</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse-navbar-collapse" id="navbarcollapse">
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+  </form></div>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Submit<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>               
+  </nav>
 </header>
 <nav>
-<a href="index.html">Home</a>
+<!-- <a href="index.html">Home</a>
 <a href="search.html">Projects</a>
 <a href="login.html">Login</a>
 <a href="register.html">Register</a>
 <a href="createproject.html">Submit</a>
-</nav>
+</nav> -->
 <main>
-    <div><h1>Project 1</h1>
-        <a href="editproject.html">Edit Project</a>
-        <ul>
-            <li>Created by:John Doe</li>
-            <li>Date Created:00/00/2000</li>
-            <li>Last Updated:00/02/2008</li>
-        </ul>
-    </div><br>
+<div class="container">
+    <div class="d-flex hd-highlight">
+    <h4 class="flex hd-highlight">Project 1</h4>
     
-    <h1>Project Abstract</h1>
-    <div>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in risus lacus. In auctor orci id tortor viverra nec consectetur eros rhoncus. Vivamus elementum velit arcu, ac porta risus. Quisque ut est vitae dolor tempus adipiscing.</p>
-    </div><br>
-    <div>
-        <h1>Project Details</h1>
-        <ul>
-            <li>Author:John Doe</li>
-            <li>Tags:#ilpum,#poe</li>
-            <li>Project Files:<a href="file1.html">File1,File2</a></li>
+  </div>
+  <div class="bg-light" style{ width: 100%
+  padding: right 15px;
+  padding: left: 15px;
+  margin: right: auto;
+  margin: left: auto; }>
+   <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul style="list-style-type: none;">
+          <li>Created by</li>
+          <li>John Doe</li>
         </ul>
-    </div>
-</main>
+      </div>
+      <div class="col">
+        <ul style="list-style-type: none;">
+          <li>Date Created</li>
+          <li>00/00/2000</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul style="list-style-type: none;">
+          <li>Last Updated</li>
+          <li>00/02/2008</li>
+        </ul>
+      
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-end">
+          <a type="submit" class="btn btn-primary" role="botton" href="editroject.html">Edit Project</a>
+        </div>
+      
+      </div>
 
+    </div>
+</div>
+  </div>
+</main>
+<main>
+    <div class="container">
+      <div class="row row-col-2">
+        <div class="col"><h6>Project Abstract</h6>
+        <form>
+          <div class="form-group">
+            <p>
+                Vivamus elementum velit arcu, ac porta risus. Quisque ut est vitae dolor tempus adipiscing.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in risus lacus. In auctor orci id tortor viverra nec consectetur eros rhoncus. Vivamus elementum velit arcu, ac porta risus. Quisque ut est vitae dolor tempus adipiscing.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in risus lacus. In auctor orci id tortor viverra nec consectetur eros rhoncus. Vivamus elementum velit arcu, ac porta risus. Quisque ut est vitae dolor tempus adipiscing.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in risus lacus. In auctor orci id tortor viverra nec consectetur eros rhoncus. Vivamus elementum velit arcu, ac porta risus. Quisque ut est vitae dolor tempus adipiscing.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in risus lacus. In auctor orci id tortor viverra nec consectetur eros rhoncus. Vivamus elementum velit arcu, ac porta risus. Quisque ut est vitae dolor tempus adipiscing.
+            </p>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Comments</label>
+            <textarea class="form-control" type="text" name="abstract" rows="3" placeholder="Leave a comment"></textarea>
+          </div>
+          <div>
+            <button class="btn btn-primary" role="button" type="submit">Submit</button>
+          </div>
+          <div class="form-group">
+            <p class="text-center">No comments added yet</p>
+          </div>
+        </form>
+        </div>
+        <div class="col"><h6>Project Details</h6><hr>
+        <form>
+          <div class="card">
+            <div class="card-header">
+              <h6>Author(s)</h6>
+            </div>
+            <div class="card-body">Sultan Ajayi</div>
+            <div class="card-footer text-primary">
+              #web
+            </div>
+          </div><br>
+          <div class="card">
+            <h6 class="card-header">Project files</h6>
+            <div class="card-body">
+              <p class="text-center">No file uploaded yet</p>
+            </div>
+          </div>
+
+        </form>
+
+        </div>
+      </div>
+    </div>   
+</main><br><br>
+<footer>
+    <div class="container">
+      <div class="card-footer text-right">
+        <p>Project Explorer &copy; 2020 - Edconnect</p>
+      </div>
+  
+    </div>
+  </footer>
 
 
 
