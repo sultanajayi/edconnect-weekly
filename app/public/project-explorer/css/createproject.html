@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+<header>
+<!-- <h1>Project Explorer</h1>
+<h2>One Stop Database for Academic Projects</h2> -->
+<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+    <a class="navbar-brand" href="#">Project Explorer</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse-navbar-collapse" id="navbarcollapse">
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+  </form></div>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Submit<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-sm-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>               
+  </nav>
+</header>
+<nav>
+<!-- <a href="index.html">Home</a>
+<a href="search.html">Projects</a>
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+<a href="createproject.html">Submit</a> -->
+</nav>
+<main>
+    <div class=" container mx-auto w-50">
+    <h4>Submit Project</h4>
+    <form>
+        <div class="form-group" >
+        <label for="form-label">Project Name:</label><br>
+        <input class="form-control" name="name" type="text" placeholder="Enter project name" />
+        </div>
+        <div class="form-group">
+            <label for="form-label" >Project Abstract:</label>
+        <textarea class="form-control" name="abstract" rows="7" cols="30"> </textarea>
+        </div>
+        <div class="form-group">
+            <label for="form-label">Authors:</label>
+        <input class="form-control" name="authors" type="text"  placeholder="Enter authors name (seperated by comma)"/>
+        </div>
+        <div class="form-group">
+            <label for="form-label">Tag(s):</label>
+        <input class="form-control" name="tags" type="text" placeholder="use # to tag project with different topics(e.g. #javascript #mongodb)" />
+        </div>
+
+     <div>
+        <button class="btn btn-primary" type="submit">Continue</button>
+     </div>
+    </form>
+</div><br>
+</main>
+
+<footer>
+    <div class="container">
+      <div class="card-footer text-right">
+        <p>Project Explorer &copy; 2020 - Edconnect</p>
+      </div>
+  
+    </div>
+  </footer>
+
+
+
+
+    </body>
+</html>
